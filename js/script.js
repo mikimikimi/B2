@@ -1,18 +1,18 @@
 $(function () {
 
-    // $("a").on("click", function () {
-    //   var hrefLink = $(this).attr("href");
-    //   console.log(hrefLink);
-    //   $("html,body").animate(
-    //     {
-    //       scrollTop: $(hrefLink).offset().top //直接到相對位置
-    //     },
-    //     800
-    //   );
-    //   return false;
-    // });
+  const button = document.querySelector('#button');
+  const tooltip = document.querySelector('#tooltip');
+ 
+  computePosition(button, tooltip, {
+    placement: 'top',
+    middleware: [flip()],
+  }).then(({x, y}) => {
+    Object.assign(tooltip.style, {
+      left: `${x}px`,
+      top: `${y}px`,
+    });
+  });
 
-    
     $("a").on("click", function () {
       var hrefLink = $(this).attr("href");
       console.log(hrefLink);

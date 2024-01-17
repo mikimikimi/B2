@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
     <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>    
-    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <!-- <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.5.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.5.4"></script>
     <script src="js/script.js"></script>
     <title>✦ Bling Bling ✦ B^2手作小舖</title>
 </head>
@@ -29,6 +31,7 @@
             <h1>✦ Bling Bling ✦</h1>
         </div>
     </header>
+
     <main>
         <div class="owl-carousel owl-theme banner new-inner">
             <a href="#">
@@ -44,36 +47,48 @@
         </div>
         
         <!-- 介紹 -->
-        <div id="product" class="productIntroduction">
-            <div class="container">
-                <div class="row">
-                    <div id="product" class="col-md-6 wow zoomIn productPhoto" data-wow-offset="350">
-                    </div>
-                    <div class="col-md-6 wow zoomIn productText" data-wow-offset="350">
-<p>
-用於心靈卡輕鬆的方式，
-來與自己溝通，
-藉由牌卡各種問題，
-經過思慮後得出自己的解答，
-更是能夠解決困擾著自己問題，
-這是我們想透過卡牌帶給您的體驗！
-而用作塔羅主要用意不是讓人迷信，
-是更了解自己的一個工具，
-比如覺得這個有準，
-那說明自身對自己的認識是有符合牌卡內容，
-覺得不準也是思考自己的生活等跡象，
-有對自己了解後會覺得不準，
-而這些警示、提醒若能幫助到您再好不過了～
-希望哪怕是很小很小的力量，
-也能成為他們的寄託，
-用微小的光芒打破房內的昏暗。
-</p>
-                    </div>
-                </div>
+        <div class="introduction">
+            <div class="introductioncontainer">
+                <h2>           ✦  歡迎來到B2手作小舖  ✦
+                 溫暖手作  點綴生活
+平淡無奇的日子也能留下閃閃發光的回憶
+                </h2>
             </div>
         </div>
 
-        <div id="logo" class="logoIntroduction">
+        <!-- 下拉選單 -->
+        
+            <button id="button" class="dropdown container wow zoomIn" data-wow-offset="100" aria-describedby="tooltip">
+                官方社群 ▽
+            </button>
+            <div id="tooltip" role="tooltip" class="container">
+                <br>
+                <a class="dropdown-item" href="#">Instagram</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Line</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item">敬請期待</a>
+            </div>
+        
+       
+          <script type="module">
+            // Your code will go here.
+          </script>
+        <!-- <div class="dropdown container wow zoomIn" data-wow-offset="350">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              官方社群
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Instagram</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Line</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item">敬請期待</a></li>
+            </ul>
+          </div> -->
+        
+            <!-- 帶改 -->
+        <!-- <div class="col-md-6 wow zoomIn productText" data-wow-offset="350">
             <div class="container">
                 <div class="row phone">
                     <div class="col-md-6 wow slideInLeft logoText" data-wow-offset="300" >
@@ -88,7 +103,7 @@
 還有總會有出路；
 鑰匙齒的部分是solution英文字。
 </p>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 wow zoomIn logoPhoto" data-wow-offset="300">
                         
                     </div>
@@ -140,16 +155,16 @@
         </div>
     </main>
     <footer>
-        <div id="info" class="footer">
+        <div class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="info">
-                        <p>國立聯合大學 文化與數位行銷學系</p>
-                        <p>指導教授 | 陳君山</p>
-                        <p>學生 | 洪翊瑄 曾苡晴 黃澄熙</p>
-                        <p>信箱 | .gmail.com</p>
-                        <p>© 2022 by Hong Yi Xuan.</p>
-                    </div>
+                <div class="info">
+                    <h2>✦  歡迎給予好評和分享，所有支持與鼓勵是我們堅持下去的動力!  ✦</h2>
+                    <p>
+感謝以下素材提供(如有侵權會更改) :
+鼠標: https://www.cursors-4u.com/
+
+聯絡信箱: blingblingBB2@gmail.com.gmail.com
+                    </p>
                 </div>
             </div>
         </div>
