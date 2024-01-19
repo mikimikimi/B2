@@ -1,17 +1,14 @@
 $(function () {
+  
 
-  const button = document.querySelector('#button');
-  const tooltip = document.querySelector('#tooltip');
- 
-  computePosition(button, tooltip, {
-    placement: 'top',
-    middleware: [flip()],
-  }).then(({x, y}) => {
-    Object.assign(tooltip.style, {
-      left: `${x}px`,
-      top: `${y}px`,
+    $(document).ready(function() {
+      $('.listA h3, .listB h3').click(function(event) {
+        event.preventDefault();
+        $(this).toggleClass('active');
+        $(this).siblings('h4>a, h4, h5, hr').slideToggle(500);
+      });
     });
-  });
+
 
     $("a").on("click", function () {
       var hrefLink = $(this).attr("href");
