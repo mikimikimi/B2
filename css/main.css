@@ -7,7 +7,7 @@ body{
     url(https://cur.cursors-4u.net/symbols/sym-7/sym635.ani), 
     url(https://cur.cursors-4u.net/symbols/sym-7/sym635.png),  
     auto !important;
-    background: #fef4e5;
+    background: #fff8ee;
     color: #3b3561;
 }
 
@@ -32,7 +32,7 @@ button:hover{
 
 .header{
     height: 150px;
-    background: #275677;
+    background: #1b496a;
     display: flex;
     justify-content: center;    
     align-items: center;   
@@ -50,7 +50,7 @@ button:hover{
 
 /* banner */
 .banner{
-    background-color: #fef4e5;
+    background-color: #fff8ee;
     height: 500px;
 }
 .owl-theme .owl-nav.disabled+.owl-dots {
@@ -144,7 +144,7 @@ button:hover{
 .listB h4:hover{
     background-color:  rgba(144, 191, 251, 0.2);
 }
-.listA h5{
+.listB h5{
     color: #3b3561;
     margin: 10px;
     font-size: 20px;
@@ -402,9 +402,6 @@ a:hover{
         width: 550px;
         margin: 5px auto;
     }
-    .listA, .listB{
-        margin: 0 0 50px 0;
-    }
     .listA h3, .listB h3{
         height: 50px;
         font-size: 24px;
@@ -452,9 +449,6 @@ a:hover{
     .menu{
         width: 500px;
         margin: 5px auto;
-    }
-    .listA, .listB{
-        margin: 0 0 50px 0;
     }
     .listA h3, .listB h3{
         height: 50px;
@@ -505,9 +499,6 @@ a:hover{
         width: 400px;
         margin: 5px auto;
     }
-    .listA, .listB{
-        margin: 0 0 50px 0;
-    }
     .listA h3, .listB h3{
         height: 50px;
         font-size: 20px;
@@ -557,9 +548,6 @@ a:hover{
         width: 400px;
         margin: 5px auto;
     }
-    .listA, .listB{
-        margin: 0 0 50px 0;
-    }
     .listA h3, .listB h3{
         height: 50px;
         font-size: 18px;
@@ -607,9 +595,6 @@ a:hover{
     .menu{
         width: 300px;
         margin: 5px auto;
-    }
-    .listA, .listB{
-        margin: 0 0 50px 0;
     }
     .listA h3, .listB h3{
         height: 40px;
