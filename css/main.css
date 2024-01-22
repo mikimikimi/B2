@@ -80,13 +80,13 @@ button:hover{
     width: 500px;
     margin: 10px auto;
 }
-.listA, .listB{
+.listA, .listB, .listC, .listD{
     margin: 0 0 100px 0;
 }
-.listA h3, .listB h3{
+.listA h3, .listB, .listC h3, .listD h3{
     border: rgba(59, 53, 97, 0.8) 1.8px solid;	
     color: #3b3561;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
     font-size: 24px;
     font-weight: bold;
     padding: 10px;
@@ -96,63 +96,76 @@ button:hover{
     justify-content: center; 
     text-align: center;
 }
+
+/* A */
 .listA h3{
     background-color:  #fdde45;
 }
 .listA h3:hover, .listA h3.active{
-    text-decoration: none;
     background-color:  #e0ab2f;
     color: #ffffff;
 }
-.listA a{
+.listA a, .listA h4{
     color: #3b3561;
     margin: 10px;
     font-size: 20px;
     text-align: center;
+    letter-spacing: 3px;
 }
 .listA h4{
-    color: #3b3561;
-    margin: 10px;
-    font-size: 20px;
     display: none;
-    text-align: center;
 }
 .listA h4:hover{
     background-color:  rgba(255, 209, 81, 0.2);
 }
-.listB h3{
+/* B */
+.listB{
     background-color:  #82bcec;
 }
-.listB h3:hover, .listB h3.active{
+.listB:hover{
     text-decoration: none;
     background-color:  #2f84a5;
     color: #ffffff;
 }
-.listB a{
+/* C */
+.listC h3{
+    background-color:  #fdde45;
+}
+.listC h3:hover, .listC h3.active{
+    background-color:  #e0ab2f;
+    color: #ffffff;
+}
+.listC h5{
     color: #3b3561;
     margin: 10px;
     font-size: 20px;
     text-align: center;
-}
-.listB h4{
-    color: #3b3561;
-    margin: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: none;
-}
-.listB h4:hover{
-    background-color:  rgba(144, 191, 251, 0.2);
-}
-.listB h5{
-    color: #3b3561;
-    margin: 10px;
-    font-size: 20px;
-    display: none;
     text-align: left;
     white-space: pre-wrap;
     line-height: 1.5;
+    display: none;
 }
+/* D */
+.listD h3{
+    background-color:  #82bcec;
+}
+.listD h3:hover{
+    text-decoration: none;
+    background-color:  #2f84a5;
+    color: #ffffff;
+}
+.listD h4{
+    color: #3b3561;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+    letter-spacing: 3px;
+}
+.listD h4:hover{
+    background-color:  rgba(144, 191, 251, 0.2);
+}
+
 hr{
     border-color: rgba(59, 53, 97, 0.4);
     margin: 10px;
@@ -240,24 +253,21 @@ a:hover{
         width: 750px;
         margin: 15px auto;
     }
-    .listA h3, .listB h3{
-        height: 80px;
-        font-size: 34px;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 85px 0;
     }
-    .listA a{
+    .listA h3, .listB, .listC h3, .listD h3{
         font-size: 30px;
+        height: 70px;
     }
-    .listA h4{
-        font-size: 30px;
+    .listA a, .listA h4{
+        font-size: 28px;
     }
-    .listB a{
-        font-size: 30px;
+    .listC h5{
+        font-size: 28px;
     }
-    .listB h4{
-        font-size: 30px;
-    }
-    .listA h5{
-        font-size: 30px;
+    .listD h4{
+        font-size: 28px;
     }
 
     .toTopBtn{
@@ -294,27 +304,23 @@ a:hover{
         width: 600px;
         margin: 10px auto;
     }
-    
-    .listA h3, .listB h3{
-        height: 80px;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 85px 0;
+    }
+    .listA h3, .listB, .listC h3, .listD h3{
         font-size: 28px;
+        height: 65px;
     }
-    .listA a{
-        font-size: 24px;
+    .listA a, .listA h4{
+        font-size: 26px;
     }
-    .listA h4{
-        font-size: 24px;
+    .listC h5{
+        font-size: 26px;
     }
-    .listB a{
-        font-size: 24px;
+    .listD h4{
+        font-size: 26px;
     }
-    .listB h4{
-        font-size: 24px;
-    }
-    .listA h5{
-        font-size: 24px;
-    }
-
+    
     .toTopBtn{
         width: 60px;
         height: 60px;
@@ -348,25 +354,21 @@ a:hover{
         width: 600px;
         margin: 10px auto;
     }
-    
-    .listA h3, .listB h3{
-        height: 80px;
-        font-size: 28px;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 85px 0;
     }
-    .listA a{
+    .listA h3, .listB, .listC h3, .listD h3{
         font-size: 24px;
+        height: 60px;
     }
-    .listA h4{
-        font-size: 24px;
+    .listA a, .listA h4{
+        font-size: 22px;
     }
-    .listB a{
-        font-size: 24px;
+    .listC h5{
+        font-size: 22px;
     }
-    .listB h4{
-        font-size: 24px;
-    }
-    .listA h5{
-        font-size: 24px;
+    .listD h4{
+        font-size: 22px;
     }
 
     .toTopBtn{
@@ -402,23 +404,20 @@ a:hover{
         width: 550px;
         margin: 5px auto;
     }
-    .listA h3, .listB h3{
-        height: 50px;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 80px 0;
+    }
+    .listA h3, .listB, .listC h3, .listD h3{
         font-size: 24px;
+        height: 60px;
     }
-    .listA a{
+    .listA a, .listA h4{
         font-size: 22px;
     }
-    .listA h4{
+    .listC h5{
         font-size: 22px;
     }
-    .listB a{
-        font-size: 22px;
-    }
-    .listB h4{
-        font-size: 22px;
-    }
-    .listA h5{
+    .listD h4{
         font-size: 22px;
     }
 
@@ -450,28 +449,25 @@ a:hover{
         width: 500px;
         margin: 5px auto;
     }
-    .listA h3, .listB h3{
-        height: 50px;
-        font-size: 24px;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 70px 0;
     }
-    .listA a{
+    .listA h3, .listB, .listC h3, .listD h3{
+        font-size: 22px;
+        height: 55px;
+    }
+    .listA a, .listA h4{
         font-size: 20px;
     }
-    .listA h4{
+    .listC h5{
         font-size: 20px;
     }
-    .listB a{
-        font-size: 20px;
-    }
-    .listB h4{
-        font-size: 20px;
-    }
-    .listA h5{
+    .listD h4{
         font-size: 20px;
     }
 
     .footer .info h2{
-        font-size: 30px;
+        font-size: 29px;
     }
     .footer .info p{
         font-size: 14px;
@@ -499,26 +495,7 @@ a:hover{
         width: 400px;
         margin: 5px auto;
     }
-    .listA h3, .listB h3{
-        height: 50px;
-        font-size: 20px;
-    }
-    .listA a{
-        font-size: 18px;
-    }
-    .listA h4{
-        font-size: 18px;
-    }
-    .listB a{
-        font-size: 18px;
-    }
-    .listB h4{
-        font-size: 18px;
-    }
-    .listA h5{
-        font-size: 18px;
-    }
-
+    
     .footer .info h2{
         font-size: 24px;
     }
@@ -548,7 +525,24 @@ a:hover{
         width: 400px;
         margin: 5px auto;
     }
-    .listA h3, .listB h3{
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 60px 0;
+    }
+    .listA h3, .listB, .listC h3, .listD h3{
+        font-size: 20px;
+        height: 50px;
+    }
+    .listA a, .listA h4{
+        font-size: 18px;
+    }
+    .listC h5{
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .listD h4{
+        font-size: 18px;
+    }
+    /* .listA h3, .listB h3{
         height: 50px;
         font-size: 18px;
     }
@@ -566,7 +560,7 @@ a:hover{
     }
     .listA h5{
         font-size: 16px;
-    }
+    } */
 
     .footer .info h2{
         font-size: 22px;
@@ -590,34 +584,32 @@ a:hover{
         font-size: 24px;
     }
     .banner{
-        height: 180px;
+        height: 170px;
     }
     .menu{
         width: 300px;
         margin: 5px auto;
     }
-    .listA h3, .listB h3{
-        height: 40px;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 45px 0;
+    }
+    .listA h3, .listB, .listC h3, .listD h3{
         font-size: 18px;
+        height: 50px;
     }
-    .listA a{
-        font-size: 14px;
+    .listA a, .listA h4{
+        font-size: 16px;
     }
-    .listA h4{
-        font-size: 14px;
+    .listC h5{
+        font-size: 16px;
+        line-height: 1.2;
     }
-    .listB a{
-        font-size: 14px;
-    }
-    .listB h4{
-        font-size: 14px;
-    }
-    .listA h5{
-        font-size: 14px;
+    .listD h4{
+        font-size: 16px;
     }
 
     .footer .info h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .footer .info p{
         font-size: 12px;
@@ -644,29 +636,24 @@ a:hover{
         width: 250px;
         margin: 5px auto;
     }
-    .listA, .listB{
-        margin: 0 0 50px 0;
+    .listA, .listB, .listC, .listD{
+        margin: 0 0 30px 0;
     }
-    .listA h3, .listB h3{
-        height: 40px;
+    .listA h3, .listB, .listC h3, .listD h3{
         font-size: 16px;
+        height: 50px;
     }
-    .listA a{
+    .listA a, .listA h4{
         font-size: 14px;
     }
-    .listA h4{
+    .listC h5{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .listD h4{
         font-size: 14px;
     }
-    .listB a{
-        font-size: 14px;
-    }
-    .listB h4{
-        font-size: 14px;
-    }
-    .listA h5{
-        font-size: 14px;
-    }
-
+    
     .toTopBtn{
         width: 40px;
         height: 40px;
@@ -701,27 +688,22 @@ a:hover{
         width: 250px;
         margin: 5px auto;
     }
-    .listA, .listB{
+    .listA, .listB, .listC, .listD{
         margin: 0 0 30px 0;
     }
-    .listA h3, .listB h3{
-        height: 40px;
+    .listA h3, .listB, .listC h3, .listD h3{
+        font-size: 16px;
+        height: 50px;
+    }
+    .listA a, .listA h4{
         font-size: 14px;
     }
-    .listA a{
-        font-size: 12px;
+    .listC h5{
+        font-size: 14px;
+        line-height: 1.2;
     }
-    .listA h4{
-        font-size: 12px;
-    }
-    .listB a{
-        font-size: 12px;
-    }
-    .listB h4{
-        font-size: 12px;
-    }
-    .listA h5{
-        font-size: 12px;
+    .listD h4{
+        font-size: 14px;
     }
 
     .toTopBtn{
@@ -736,7 +718,7 @@ a:hover{
         font-size: 10px;
     }
     .footer{
-        height: 270px;
+        height: 200px;
     }
 
 }

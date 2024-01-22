@@ -2,10 +2,10 @@ $(function () {
   
 
     $(document).ready(function() {
-      $('.listA h3, .listB h3').click(function(event) {
+      $('.listA h3, .listB h3, .listC h3, .listD h3').click(function(event) {
         event.preventDefault();
         $(this).toggleClass('active');
-        $(this).siblings('h4 a, h4, h5, hr').slideToggle(500);
+        $(this).siblings('h4, h5, hr').slideToggle(500);
       });
     });
 
