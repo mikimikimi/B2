@@ -52,6 +52,10 @@ button:hover{
 .banner{
     background-color: #fff8ee;
     height: 500px;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 0px;
@@ -64,16 +68,6 @@ button:hover{
     background: #a5b4c4;
 }
 
-/* .introduction{
-    height: 320px;
-    width: 100%;
-    display: flex;
-    justify-content: center;    
-}
-.introductioncontainer h2{
-    white-space: pre-wrap;
-    line-height: 2;
-} */
 
 /* 下拉選單1 */
 .menu{
